@@ -24,6 +24,8 @@ const items = ["Pencil", "Notebook", "yo-yo", "Gum"];
 
 */
 
+console.log("\n\n-----CHALLENGE 1-----\n\n");
+
 function getLength(arr, cb) {
   // getLength passes the length of the array into the callback.
   return cb(arr.length);
@@ -32,6 +34,8 @@ function getLength(arr, cb) {
 getLength(items, function(array) {
   console.log(array);
 });
+
+console.log("\n\n-----CHALLENGE 2-----\n\n");
 
 function last(arr, cb) {
   // last passes the last item of the array into the callback.
@@ -42,6 +46,8 @@ last(items, function(arr) {
   console.log(arr);
 });
 
+console.log("\n\n-----CHALLENGE 3-----\n\n");
+
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback
   cb(x + y);
@@ -51,12 +57,16 @@ sumNums(3, 4, cb => {
   console.log(cb);
 });
 
+console.log("\n\n-----CHALLENGE 4-----\n\n");
+
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
   cb(x * y);
 }
 
 multiplyNums(3, 4, cb => console.log(cb));
+
+console.log("\n\n-----CHALLENGE 5-----\n\n");
 
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
